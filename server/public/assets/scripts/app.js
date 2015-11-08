@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 });
 
-function appendDom(data){
+function appendDom(){
 
     $('.message-posts').hide().fadeIn(500).empty();
 
@@ -41,7 +41,7 @@ function postMessage() {
 
     $.each($('#form').serializeArray(), function(i, field){
         values[field.name] = field.value;
-        $("#form").find("textarea").val("")
+        $("#form").find("textarea").val("");
         $("#form").find("input").val("");
 
     });

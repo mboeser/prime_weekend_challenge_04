@@ -5,7 +5,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://mboeser@yahoo.com:nUF-Je3-rKn-neB@ds031098.mongolab.com:31098/heroku_p7mvk3hx');
+mongoose.connect('mongodb://heroku_bkcrmf82:test123@ds051524.mongolab.com:51524/heroku_bkcrmf82');
 mongoose.model('Message', new Schema({"name": String, "message": String}, {collection: 'messages'}));
 var Message = mongoose.model('Message');
 
